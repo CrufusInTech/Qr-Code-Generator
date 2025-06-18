@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@inquirer/input": "^4.1.12",
+    "@inquirer/prompts": "^7.5.3",
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.2.16",
+    "qr-image": "^3.2.0"
+  },
+  "name": "2.4-qr-code-project",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Crufus",
+  "license": "ISC",
+  "description": "This is a qr code generator: It propmts the user for the url, generates it and the saves it in a qrCode.txt file"
+}
