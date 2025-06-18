@@ -9,6 +9,8 @@
 import { input } from '@inquirer/prompts';
 import qr from 'qr-image';
 import fs from 'fs';
+import { writeFile } from 'node:fs';
+import { Buffer } from 'node:buffer';
 
 // The inquirer that is used to get user input.
 
@@ -27,6 +29,11 @@ qrPng.pipe(fs.createWriteStream(qrFilename));
 // 5. Optional: get the PNG as a string if needed elsewhere
 const pngString = qr.imageSync(answer, { type: 'png', parse_url: true });
 
-console.log(`QR code saved as: ${qrFilename}`);
+console.log(`Qr-code png saved as: ${qrFilename}`);
 
 
+const data = new Uint8Array(Buffer.from('Hello Node.js'));
+writeFile('message.txt', answer, (err) => {
+  if (err) throw err;
+  console.log('The file has been saved!');
+});
