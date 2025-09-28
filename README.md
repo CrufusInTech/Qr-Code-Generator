@@ -72,7 +72,7 @@ For learning or personal use, feel free to explore the code. For commercial use,
 
 ## 📬 Contact
 📫 [chigozirimrufus@gmail.com]
-🌐 []https://github.com/cru-fus
+🌐 []https://github.com/CrufusInTech
 
-Created with ❤️ by [Crufus]
+Created with ❤️ by [CrufusInTech]
 
